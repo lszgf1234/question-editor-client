@@ -34,7 +34,7 @@ export default async function handler(
 
   try {
     // 提交到服务端 Mock
-    const resData = await postAnswer(answerInfo)
+    const resData: any = await postAnswer(answerInfo)
     if (resData.errno === 0) {
       // 如果提交成功了
       res.redirect('/success')
