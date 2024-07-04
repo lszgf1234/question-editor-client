@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pro:start": "pm2 start npm --name wenJuanUser -- run start",
+    "pro:restart": "pm2 restart wenJuanUser",
+    "pro:stop": "pm2 stop wenJuanUser",
+    "pro:stop": "pm2 list",
+    "pro:del ": "pm2 del wenJuanUser"
+
   },
   "dependencies": {
     "@types/node": "18.14.1",
@@ -16,6 +22,7 @@
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
     "next": "13.2.1",
+    "pm2": "^5.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.58.3",
