@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const HOST = 'http://39.106.130.35:3001' // Mock 的 host
+const HOST = process.env.HOST // Mock 的 host
 // const HOST = 'http://localhost:3001' // Mock 的 host
 const requestInstance = axios.create({
   baseURL: HOST,
