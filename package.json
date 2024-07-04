@@ -9,7 +9,7 @@
     "lint": "next lint",
     "pro:start": "pm2 start npm --name wenJuanUser -- run start",
     "pro:restart": "npm run pro:del && npm run pro:start",
-    "pro:del ": "pm2 del wenJuanUser"
+    "pro:del": "pm2 del wenJuanUser"
 
   },
   "dependencies": {
